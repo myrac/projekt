@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400);
+header a {
+    text-decoration: none
+}
+
+#branding,
+article,
+h3,
+header,
+footer {
+    text-align: center
+}
+
+.button,
+header h1,
+li a {
+    text-transform: uppercase
+}
+
+article,
+footer,
+header {
+    overflow: auto
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1em;
+    /*color: #2d2d2a*/
+}
+
+.button,
+h1,
+h2,
+h3,
+li a {
+    font-family: Montserrat, sans-serif
+}
+
+footer {
+    background-color: #00a5ff
+}
+
+.logo {
+    width: 130px
+}
+
+form,
+nav {
+    width: 100%
+}
+
+#branding {
+    margin: 7% 0;
+    clear: both
+}
+
+.btn-bar a {
+    font-size: 50px;
+    padding: 2%
+}
+
+.btn-bar {
+    margin-top: 3%
+}
+
+header {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+header h1 {
+    letter-spacing: 5px
+}
+
+header h2 {
+    font-weight: 200;
+    font-size: 2em
+}
+
+h1,
+h2,
+h3,
+p {
+    font-weight: 300;
+    padding: 0;
+    margin: 0
+}
+
+p {
+    line-height: 200%
+}
+
+footer p {
+    line-height: 220%;
+    margin: 3% 0
+}
+
+h1 {
+    font-size: 4.5em
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0 0 6%
+}
+
+h3 {
+    font-size: 1em;
+    margin: 5% 0
+}
+
+article {
+	margin: 0 auto;
+    color: #2d2d2a;
+    background-color: #fff;
+    padding: 5% 30%
+}
+
+.button,
+li a,
+nav {
+    text-align: center
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s
+}
+
+
+a {
+	color: #fff
+}
+
+a:active,
+a:hover {
+    text-decoration: none;
+	color: #00a5ff
+}
+
+.button,
+li a {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 3px;
+    border: 1px solid;
+    font-size: .8em;
+    font-weight: 400;
+    cursor: pointer;
+    background: 0;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s;
+	text-decoration: none;
+}
+
+footer a {
+	color: #2d2d2a
+}
+
+footer a:active,
+footer a:hover {
+    text-decoration: none;
+	color: #fff
+}
+
+li {
+    list-style-type: none
+}
+
+nav {
+    -webkit-transition-duration: .6s;
+    -moz-transition-duration: .6s;
+    -o-transition-duration: .6s;
+    transition-duration: .6s;
+	background-color: #2d2d2a
+}
+
+nav li {
+    display: inline;
+    padding: 0 6px
+}
+
+nav ul {
+    margin: 0
+}
+
+nav a {
+    border: 0
+}
+
+form input:focus,
+form textarea:focus
+{
+    border: 2px solid #00a5ff
+}
+
+#right {
+    margin-left: 2%;
+    color: #2d2d2a;
+    background-color: #00a5ff
+}
+
+#doublepanel {
+    width: 47%;
+    float: left
+}
+
+#doublepanel.right {
+    padding-left: 3%
+}
+
+#doublepanel.left {
+    padding-right: 3%
+}
+
+form input,
+form textarea {
+	margin-right: 10px;
+    resize: none;
+}
+
+#username, #password, #title, #description, select {
+    padding: 5px;
+    width: 100%;
+	height: 30px;
+    margin: 7px 0;
+    border: 1px solid #2d2d2a;
+    resize: none
+}
+
+#description{
+	height: 100px
+}
+
+form input.button {
+    color: #2d2d2a;
+    background: 0;
+    padding: 12px 32px;
+	margin-top: 20px;
+    border: 1px solid;
+    cursor: pointer;
+	width: 30%
+}
+
+form input.button:hover {
+    color: #00a5ff
+}
+
+footer {
+    padding: 3% 17% 0;
+	height: 500px
+}
+
+footer li {
+    font-size: 35px;
+    display: inline;
+    padding: 0 2%
+}
+
+footer li a {
+    width: 40px;
+    height: 40px;
+    padding: 0
+}
+
+footer ul {
+    padding: 0
+}
+
+@media screen and (max-width:1281px) {
+    #doublepanel {
+        clear: both;
+        width: 100%;
+        left: 0
+    }
+    #doublepanel.right {
+        padding-left: 0
+    }
+    #doublepanel.left {
+        padding-right: 0
+    }
+    .category-welcome,
+    article {
+        padding: 5% 15%
+    }
+}
+
+@media screen and (max-width:721px) {
+    nav li {
+        display: block;
+        padding: 0
+    }
+    form input,
+    form textarea {
+        width: 100%
+    }
+}
