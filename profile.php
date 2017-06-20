@@ -41,17 +41,19 @@
     </header>
 	
 	<article>
-		<h2>Profil korisnika</h2>
-		<!-- 
-		mysql naredbe
+		<h2>Profil korisnika: <?php echo $_SESSION['user'] ?></h2>
 		
-		
-		
-		
-		
-		
-		
-		-->
+		<img src="user.jpg">
+		<?php
+			if ($_SESSION['user'] == 'user')
+			{
+				echo '<ul style="float:right;text-align:left"><li>Ime: Ivica</li><li>Prezime: Horvat</li><li>Status: Student</li><li></li><br><li>Fakultet: Tehničko Veleučilište u Zagrebu</li><li>Studij: Informatika</li><li>Smjer: Elektroničko poslovanje</li><li></li><br><li>Broj riješenih anketa: 13</li><li>Točnost odgovora: 89.53%</li></ul>';
+			}
+			else if ($_SESSION['user'] == 'admin')
+			{
+				echo '<ul style="float:right;text-align:left"><li>Ime: Mirko</li><li>Prezime: Filipović</li><li>Status: Nositelj kolegija</li><li></li><br><li>Fakultet: Tehničko Veleučilište u Zagrebu</li><li>Studij: Informatika</li><li>Smjer: Elektroničko poslovanje</li><li>Kolegij: Projektno Programiranje</li><br><li>Broj objavljenih anketa: 530</li></ul>';
+			}
+		?>
 	</article>
 
 	<footer>
