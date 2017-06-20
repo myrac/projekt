@@ -1,9 +1,6 @@
 <?php
 	session_start();
-	if (!isset($_SESSION['user']))
-	{
-		header('Location: index.php');
-	}
+	include('form-anketa.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,13 +38,28 @@
     </header>
 	
 	<article>
-		<h2>Arhiva prijašnjih anketa</h2>
-		
-		<a href="anketa1.php">Anketa 15.05.2017. - Koliko je 2+2?</a><br><br>
-		<a href="anketa2.php">Anketa 21.05.2017. - Koju biste ocjenu dali ovom predmetu?</a><br><br>
-		<a href="anketa3.php">Anketa 30.05.2017. - Je li ova tvrdnja istinita (C++)?</a><br><br>
-		<a href="anketa4.php">Anketa 10.06.2017. - Je li ova tvrdnja istinita (Java)?</a><br><br>
-		<a href="anketa5.php">Anketa 16.06.2017. - Opišite koliko ste zadovoljni sa Projektnim Programiranjem.</a><br>
+		<h2>Odgovori na pitanje: Koliko je 2+2?</h2>
+		<form method="post" action="form-create.php">
+			<label for="type">Prikaži odgovore kao:&nbsp;&nbsp;&nbsp;</label><select id="type" name="type" required>
+				<option value="stat">Statistiku</option>			
+				<option value="tablica">Tablicu</option>
+				<option value="graf">Graf</option>
+			</select>
+		</form>
+
+		<p>Prikazujem odgovore kao <b>Statistiku</b></p><br><br>
+		<table style="width:100%">
+			<tr>
+				<th>a) 4</th>
+				<th>b) 5</th>
+				<th>c) 10</th>
+			</tr>
+			<tr>
+				<td>80%</td>
+				<td>15%</td>
+				<td>5%</td>
+			</tr>
+		</table>
 	</article>
 
 	<footer>

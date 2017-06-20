@@ -42,13 +42,19 @@
 		<form method="post" action="form-create.php">
 			<label for="title">Naslov:</label><input id="title" type="text" name="title" max="50" required>
 			<label for="description">Opis:</label><textarea id="description" name="description" maxlength="250"></textarea><br><br>
-			<select name="type" required>
+			<label for="type">Vrsta odgovora:&nbsp;&nbsp;</label><select id="type" name="type" required>
 				<option value="multiple">Višestruki izbor</option>
 				<option value="single">Jednostruki izbor</option>
 				<option value="descriptive">Odgovor opisnog tipa</option>
-			</select><br><br>
-			<input type="radio" id="option1" name="status" value="option1" checked><label for="option1">Option 1</label><br><br>
-			<input type="radio" id="newoption" name="status" value="newoption"><label for="newoption">Click to add new option</label><br><br>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="number">Vremensko ograničenje (sati):&nbsp;&nbsp;</label><input type="number" id="number" name="quantity" min="1" max="48"><br><br>
+			
+			<label for="odgovor">a) Odgovor - označi kao točan odgovor</label><input type="checkbox"><input id="option" type="text" name="option1" max="50" placeholder="Unesite tekst odgovora" required>
+			<label for="odgovor">b) Odgovor - označi kao točan odgovor</label><input type="checkbox"><input id="option" type="text" name="option2" max="50" placeholder="Unesite tekst odgovora" required>
+			<label for="odgovor">c) Odgovor - označi kao točan odgovor</label><input type="checkbox"><input id="option" type="text" name="option3" max="50" placeholder="Unesite tekst odgovora" required>
+			
+			
+			
+			<input type="submit" name="dodaj" value="+ DODAJ ODGOVOR" class="button">
 			<input type="submit" name="posalji" value="Kreiraj anketu" class="button">
 		</form>
 	</article>
