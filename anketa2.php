@@ -5,40 +5,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8">
-	<title>TVZ Anketa</title>
-	<meta name="description" content="TVZ aplikacija za ankete">
-	<meta name="author" content="Team Product">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <header>
-        <nav id="links">
-            <ul>
-                <li><a href="#">Home</a></li>
-				<?php
-				if ($_SESSION['user'] == 'user')
-				{
-					echo '<li><a href="profile.php">' . $_SESSION['user'] . '</a></li><li><a href="anketa.php">Aktivna anketa</a></li><li><a href="logout.php">Odjava</a></li>';
-				}
-				else if ($_SESSION['user'] == 'admin')
-				{
-					echo '<li><a href="profile.php">' . $_SESSION['user'] . '</a></li><li><a href="anketa.php">Aktivna anketa</a></li><li><a href="anketanova.php">Kreiranje ankete</a></li><li><a href="arhiva.php">Arhiva</a></li><li><a href="logout.php">Odjava</a></li>';
-				}
-				else
-				{
-					echo '<li><a href="login.php">Login</a></li>';
-				}
-				?>		
-            </ul>
-        </nav>
-    </header>
+<?php include 'header.php';?>
 	
 	<article>
-		<h2>Odgovori na pitanje: Koliko ste zadovoljni kvalitetom usluge, od 1 do 5?</h2>
+		<h2>Prikaz odgovora na anketu: Koju biste ocjenu dali ovom predmetu?</h2>
 		<form method="post" action="form-create.php">
 			<label for="type">Prikaži odgovore kao:&nbsp;&nbsp;&nbsp;</label><select id="type" name="type" required>
 				<option value="stat">Statistiku</option>			
@@ -57,11 +27,11 @@
 				<th>c) 5</th>
 			</tr>
 			<tr>
+				<td>0%</td>
+				<td>0%</td>
+				<td>5%</td>
 				<td>10%</td>
-				<td>15%</td>
-				<td>30%</td>
-				<td>20%</td>
-				<td>25%</td>
+				<td>85%</td>
 			</tr>
 		</table>
 	</article>
