@@ -12,6 +12,7 @@
 	<meta name="author" content="Team Product">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="TVZ.png" type="image/x-icon"/>
 </head>
 
 <body>
