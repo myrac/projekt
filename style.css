@@ -45,7 +45,10 @@ footer {
 }
 
 .logo {
-    width: 130px
+    width: 220px;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
 }
 
 form,
@@ -56,15 +59,6 @@ nav {
 #branding {
     margin: 7% 0;
     clear: both
-}
-
-.btn-bar a {
-    font-size: 50px;
-    padding: 2%
-}
-
-.btn-bar {
-    margin-top: 3%
 }
 
 header {

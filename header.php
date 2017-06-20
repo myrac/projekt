@@ -12,6 +12,7 @@
     <header>
         <nav id="links">
             <ul>
+				<li><a href="http://www.tvz.hr" class="logo"><img src="logo.png" class="logo"></a></li>
                 <li><a href="index.php">Home</a></li>
 				<?php
 				if ($_SESSION['user'] == 'user')
