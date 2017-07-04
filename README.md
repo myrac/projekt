@@ -5,8 +5,8 @@
 
 
 pass:
-- za studenta: usename: user
+- za studenta: usename: user, 
                password: 123123
 
-- za profesora: usename: admin
+- za profesora: usename: admin, 
                password: 123123
